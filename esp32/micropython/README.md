@@ -1,5 +1,7 @@
 # Micropython on ESP32
 
+Flash the ESP32 devboard with Micropython, these steps are for Linux.
+
 ## Firmware
 
 https://micropython.org/download#esp32
