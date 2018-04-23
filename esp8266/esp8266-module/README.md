@@ -1,7 +1,7 @@
 # ESP8266
 The WiFi Module is a self contained SOC with integrated TCP/IP protocol stack that can give any microcontroller access to your WiFi network.
 
-<img src="https://github.com/mattwind/iot/esp8266/esp8266-module/blob/master/images/esp8266_pinout.png">
+<img src="https://github.com/mattwind/iot/blob/master/esp8266/esp8266-module/images/esp8266_pinout.png">
 
 **Wiring**
 
@@ -15,8 +15,6 @@ AT+GMR
 compiled @ Dec 25 2014 21:40:28
 AI-THINKER Dec 25 2014
 ````
-
-Unzip the the content of the [main ZIP file](https://github.com/mattwind/ESP8266/archive/master.zip)
 
 Close Putty and/or any other application that is using the COM port to access the ESP8266.
 
