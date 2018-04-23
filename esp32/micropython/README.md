@@ -32,3 +32,29 @@ Write the new firmware
 ## Source
 
 https://www.cnx-software.com/2017/10/16/esp32-micropython-tutorials/
+
+# Notes
+
+For generic online docs please visit http://docs.micropython.org/ 
+
+## Control commands 
+
+```
+ CTRL-A -- on a blank line, enter raw REPL mode 
+ CTRL-B -- on a blank line, enter normal REPL mode 
+ CTRL-C -- interrupt a running program 
+ CTRL-D -- on a blank line, do a soft reset of the board 
+ CTRL-E -- on a blank line, enter paste mode 
+```
+## Basic WiFi configuration: 
+ 
+```
+import network 
+sta_if = network.WLAN(network.STA_IF); sta_if.active(True) 
+sta_if.scan() # Scan for available access points 
+sta_if.connect("<AP_name>", "<password>") # Connect to an AP 
+sta_if.isconnected() # Check for successful connection 
+```
+
+For further help on a specific object, type `help(obj)`
+For a list of available modules, type `help('modules')`
