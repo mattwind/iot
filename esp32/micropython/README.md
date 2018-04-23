@@ -6,10 +6,12 @@ https://micropython.org/download#esp32
 
 ## Software
 
-`sudo apt install python-pip
+```
+sudo apt install python-pip
 sudo pip install --upgrade pip
 sudo pip install esptool --upgrade
-sudo pip install adafruit-ampy --upgrade`
+sudo pip install adafruit-ampy --upgrade
+```
 
 ## Flash
 
