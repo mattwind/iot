@@ -1,6 +1,6 @@
-# iot
+# IoT
 
-Another playground for iot devices.
+Another playground for IoT devices.
 
 ## ESP8266
 
