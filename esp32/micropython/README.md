@@ -25,13 +25,24 @@ Write the new firmware
 
 `esptool --chip esp32 --port /dev/ttyUSB0 write_flash -z 0x1000 firmware.bin`
 
-## Program
+## Program device
+
+Use ampy to program the device. If you want the program to run on boot rename it to *main.py*
 
 `ampy --port /dev/ttyUSB0 run blink.py`
 
-## Source
+### List programs
 
-https://www.cnx-software.com/2017/10/16/esp32-micropython-tutorials/
+Reconnect to the serial console and type the following:
+
+```
+import os
+os.listdir()
+```
+
+### Run programs
+
+`import blink.py`
 
 # Notes
 
@@ -59,3 +70,8 @@ sta_if.isconnected() # Check for successful connection
 For further help on a specific object, type `help(obj)`
 
 For a list of available modules, type `help('modules')`
+
+## Source
+
+https://www.cnx-software.com/2017/10/16/esp32-micropython-tutorials/
+
