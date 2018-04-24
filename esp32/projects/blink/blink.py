@@ -3,6 +3,7 @@ import machine
 
 # GPIO2
 led  = machine.Pin(2, machine.Pin.OUT)
+# blink rate
 rate = 500
 
 while True:
