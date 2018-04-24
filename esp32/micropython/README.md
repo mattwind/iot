@@ -27,9 +27,13 @@ Write the new firmware
 
 ## Program device
 
-Use ampy to program the device. If you want the program to run on boot rename it to *main.py*
+Use ampy to program the device. Type the following to run the program. 
 
 `ampy --port /dev/ttyUSB0 run blink.py`
+
+If you want the program to run on boot rename it to *main.py*
+
+`ampy --port /dev/ttyUSB0 put main.py`
 
 ### List programs
 
@@ -44,9 +48,31 @@ os.listdir()
 
 `import blink.py`
 
+### Remove programs
+
+`ampy --port /dev/ttyUSB0 rm blink.py
+
 # Notes
 
 For generic online docs please visit http://docs.micropython.org/ 
+
+## Modules
+
+List available modules type: help('modules')
+
+For access to the hardware use the 'machine' module: 
+
+```
+import machine 
+pin12 = machine.Pin(12, machine.Pin.OUT) 
+pin12.value(1) 
+pin13 = machine.Pin(13, machine.Pin.IN, machine.Pin.PULL_UP) 
+print(pin13.value()) 
+i2c = machine.I2C(scl=machine.Pin(21), sda=machine.Pin(22)) 
+i2c.scan() 
+i2c.writeto(addr, b'1234') 
+i2c.readfrom(addr, 4) 
+``` 
 
 ## Control commands 
 
@@ -73,5 +99,8 @@ For a list of available modules, type `help('modules')`
 
 ## Source
 
+https://github.com/micropython/micropython-esp32
+
 https://www.cnx-software.com/2017/10/16/esp32-micropython-tutorials/
+
 

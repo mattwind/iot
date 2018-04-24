@@ -3,7 +3,7 @@ import machine
 
 # GPIO2
 led  = machine.Pin(2, machine.Pin.OUT)
-rate = 100
+rate = 500
 
 while True:
         led.value(1)
